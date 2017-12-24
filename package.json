@@ -1,0 +1,33 @@
+{
+  "name": "redux-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain-backed redux implementation",
+  "main": "index.js",
+  "author": "Nevan Tan <nevan@tanclan.ca>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nevantan/redux-blockchain"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --require babel-core/register src/tests/**/*.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.1.3",
+    "sinon-chai": "^2.14.0"
+  },
+  "babel": {
+    "presets": ["env"],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "dependencies": {
+    "js-sha256": "^0.9.0",
+    "moment": "^2.20.1"
+  }
+}
